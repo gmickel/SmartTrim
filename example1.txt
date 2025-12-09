@@ -1,0 +1,34 @@
+• Subject: Next Steps – SDLC Assessment & Template Acceleration (Mobisys x Growth Factors)
+
+  Hi Peter,
+
+  thanks again for the two very productive sessions on template acceleration and the SDLC / Copilot review. The
+  combination of the Nova lane plus the SDLC uplift looks like a strong fit.
+
+  Quick recap of where we landed and a proposal for next steps:
+
+  1. Starting lane – SDLC assessment (Jan)
+      - Focus: non‑SAP lane (Nova / TypeScript) first, keep MSB/ABAP as a follow‑on.
+      - Goal: get a clear baseline on idea→deploy, bug rates, and current AI usage (Copilot, prompts, instruction
+        files), then design an agentic SDLC flow that actually fits how your teams work.
+      - Outcome: concrete recommendations on tooling, processes, and guardrails (incl. DevOps, reviews, documentation
+        and regulated outputs).
+  2. Template acceleration – scoped as extension
+      - We park the SAP/Nova template project as a second phase:
+          - Use what we learn from the SDLC assessment (context patterns, instruction files, guardrails).
+          - Then apply that to RFUI → Nova template generation, with clear boundaries around “what AI may touch” in a
+            highly constrained SAP environment.
+  3. What we’ll do on our side
+      - Cedric and I will draft a 5–15 day SDLC assessment scope (incl. KPIs, concrete workshop agenda, and the data/
+        tooling we’ll need from your side).
+      - We’ll assume a January start and propose a few date options that work around holiday absences.
+  4. What we’d need from you
+      - A quick confirmation that SDLC (Nova lane) first, templates second is still your preferred order.
+      - A sense of availability in January for:
+          - 1–2 deep‑dive sessions with PM/PO, senior dev, DevOps (current process + tooling walkthrough).
+          - A small core group of “champions” we can work with during the assessment.
+
+  If that sounds right, I’ll send over a draft Scope of Work and a proposed calendar hold for the first SDLC workshop.
+
+  Best,
+  Gordon

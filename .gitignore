@@ -1,0 +1,56 @@
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+*.xcscheme
+
+# Build
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Dependencies
+Carthage/Build/
+Pods/
+.build/
+.swiftpm/
+
+# Code signing
+*.mobileprovision
+*.provisionprofile
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# CocoaPods
+Podfile.lock
+
+# Swift Package Manager
+Package.resolved
+
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDE
+*.swp
+*.swo
+*~
+.idea/
+*.iml
+
+# Secrets
+*.env
+.env.*
+secrets/

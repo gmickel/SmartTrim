@@ -1,0 +1,20 @@
+  Betreff: Nächste Schritte SDLC-Pilot – Terminvorschläge erbeten
+
+  Hallo Peter,
+
+  kurz zum Stand nach unserem Meeting vom 25.11.:
+
+  Wir bereiten gerade den Assessmentplan (5–15 Tage) inkl. KPIs vor – Fokus auf Idea-to-Deploy-Zeit,
+   Bug-Raten, AI-Adoption. Ziel bleibt Start im Januar.
+
+  Bitte von eurer Seite:
+  - Terminvorschläge für Januar senden
+  - Post-Workshop-Feedback + Usage-Daten aus der Copilot-Nutzung teilen
+  - Scope festlegen: idealerweise erst Nova/TypeScript (nicht SAP)
+
+  Falls im Dezember Kapazität da ist, können wir optional schon vorarbeiten.
+
+  Bei Fragen melden – ansonsten bis zum nächsten Termin.
+
+  Beste Grüße,
+  Gordon
