@@ -161,4 +161,34 @@ struct TextHealerTests {
         #expect(result.contains("- Another"))
         #expect(result.contains("* Star"))
     }
+
+    @Test("Preserves shell backslash line continuations")
+    func preserveBackslashContinuations() {
+        let input = """
+        curl -X POST https://api.example.com/upload \\
+            --header "Content-Type: application/json" \\
+            --header "Authorization: Bearer TOKEN" \\
+            --data '{"name": "test"}'
+        """
+        let result = healer.heal(input)
+        // Should preserve line breaks for shell commands
+        let lines = result.components(separatedBy: "\n")
+        #expect(lines.count == 4, "Shell commands with backslash continuations should preserve line breaks")
+        #expect(lines[0].hasSuffix("\\"), "First line should end with backslash")
+        #expect(lines[1].hasSuffix("\\"), "Second line should end with backslash")
+    }
+
+    @Test("Does not mangle multi-line shell commands")
+    func doesNotMangleShellCommands() {
+        let input = """
+        docker run -d \\
+            --name mycontainer \\
+            --volume /host:/container \\
+            myimage:latest
+        """
+        let result = healer.heal(input)
+        // Should NOT join into single line with embedded backslashes
+        #expect(!result.contains("\\ --name"), "Should not join backslash lines into single line")
+        #expect(result.contains("\\"), "Should preserve backslashes")
+    }
 }

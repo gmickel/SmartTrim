@@ -70,6 +70,11 @@ struct TextHealer: Sendable {
     }
 
     private func shouldJoinWithPrevious(previous: String, current: String, originalLine: String) -> Bool {
+        // Preserve shell backslash line continuations
+        if previous.hasSuffix("\\") {
+            return false
+        }
+
         let hadIndentation = originalLine.first?.isWhitespace == true
 
         let sentenceEnders: [Character] = [".", "!", "?", ":", ";"]
